@@ -1,0 +1,57 @@
+@import './node_modules/bulma/bulma.sass';
+@import 'variables';
+body {
+  background-color: $backgroundColor;
+}
+
+.button.is-outlined.is-light {
+  border-color: $blueTextColor;
+  color: $blueTextColor;
+  &:hover {
+    background-color: $blueTextColor;
+    color: #fff;
+  }
+}
+.navbar {
+  background-color: $backgroundColor;
+}
+
+@mixin transition-all {
+  transition: all 0.5s ease;
+}
+
+.navbutton {
+  @include transition-all;
+  color: black;
+  &:hover {
+    color: $blueTextColor;
+  }
+}
+.subtitle {
+  color: $blueTextColor;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.skill-icon {
+  width: 96px;
+  height: 96px;
+}
+
+a.hover-effect {
+  transition: color 0.3s ease-in-out;
+  color: black;
+  &:hover {
+    color: #007bff;
+  }
+}
+
+.box {
+  overflow-y: scroll;
+}
+
+.divider {
+  height: 1px;
+  background-color: #007bff;
+  width: 30%;
+  margin: auto;
+}
